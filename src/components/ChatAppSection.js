@@ -43,7 +43,7 @@ const chatApps = [
   {
     name: 'JK님',
     url: 'https://wowdogs.vercel.app/',
-    img: 'chat1.png',
+    img: 'chat5.png',
   },
 ]
 
