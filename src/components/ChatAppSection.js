@@ -37,7 +37,7 @@ const chatApps = [
   },
   {
     name: '써니님',
-    url: 'https://testchatbot-five.vercel.app/',
+    url: 'https://style-me-td.vercel.app/',
     img: 'chat4.png',
   },
   {
