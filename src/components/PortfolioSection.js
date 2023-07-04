@@ -2,8 +2,6 @@ import { Element } from 'react-scroll'
 import { Grid, Card, CardContent, Typography, Box } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 
-import { CssBaseline } from '@material-ui/core'
-
 const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: 'center',
@@ -76,7 +74,10 @@ function PortfolioSection() {
   return (
     <Element name="portfolio" className={classes.root}>
       <Typography variant="h3" className={classes.title}>
-        <Box fontWeight="fontWeightBold">내 생에 첫 개발 - ChatGPT 코딩</Box>
+        <Box fontWeight="fontWeightBold">
+          내 생에 첫 개발 - ChatGPT 코딩 챌린지 1기 작품
+        </Box>
+        <Box style={{ marginTop: 40, fontSize: 30 }}>홈페이지 만들기</Box>
       </Typography>
       <Grid container spacing={6}>
         {portfolios.map((portfolio, index) => (
@@ -92,7 +93,7 @@ function PortfolioSection() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src={`/img/${portfolio.img}`}
+                    src={process.env.PUBLIC_URL + '/img/' + portfolio.img}
                     alt={portfolio.name}
                     className={classes.img}
                     style={{ width: '100%' }}
